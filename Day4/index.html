@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Unordered List -->
+    <h2>Unordered List</h2>
+    <ul>
+        <li>Apple</li>
+        <li>Mango</li>
+        <li>Guava</li>
+    </ul>
+
+    <!-- Ordered List -->
+    <h2>Ordered List</h2>
+    <ol>
+        <li>Apple</li>
+        <li>Mango</li>
+        <li>Guava</li>
+    </ol>
+
+    <!-- Definition List -->
+    <h2>Definition List</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>A markup language for creating web pages.</dd>
+
+        <dt>CSS</dt>
+        <dd>A style sheet language for describing the presentation of documents.</dd>
+
+        <dt>Table</dt>
+        <dd>A way to display data in rows and columns.</dd>
+    </dl>
+
+    <!-- Table -->
+    <h2>Student Marks Table</h2>
+    <table cellpadding="6" border="1">
+        <tr>
+            <th rowspan="2">Name</th>
+            <th colspan="2">Marks</th>
+        </tr>
+        <tr>
+            <th>Maths</th>
+            <th>Science</th>
+        </tr>
+        <tr>
+            <td>Arun</td>
+            <td>90</td>
+            <td>100</td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <!-- Form -->
+    <h2>Registration Form</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Typeyourname" ><br><br>
+
+        <label for="course">Select Course:</label>
+        <select id="course" name="course">
+            <option value="frontend">Frontend</option>
+            <option value="backend">Backend</option>
+            <option value="mern">MERN</option>
+        </select>
+        <br><br>
+
+        <label>Sports:</label><br>
+        <input type="checkbox" id="chess" value="chess" name="sports">
+        <label for="chess">Chess</label><br>
+
+        <input type="checkbox" id="carrom" value="carrom" name="sports">
+        <label for="carrom">Carrom</label><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+        <input type="submit" value="Submit">
+
+        
+    </form>
+
+</body>
+</html>
