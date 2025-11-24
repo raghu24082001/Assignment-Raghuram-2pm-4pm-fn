@@ -1,0 +1,22 @@
+div{
+            display:flex;
+            flex-direction: column;
+            
+        }
+        h2{
+            color: blue;
+        }
+        img{
+            height: 100px;
+            width: 100px;
+        }
+        button{
+            margin-top: 10px;
+            width: 60px;
+            padding: 10px;
+            
+        }
+        button:hover{
+            background-color: bisque;
+            cursor: pointer;
+        }
