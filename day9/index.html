@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Layout</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        header{
+            height: 10vh;
+            width:100vw;
+            background-color: bisque;
+            margin: 10px;
+            }
+            main{
+                height: 80vh;
+                width: 100vw;
+                display: flex;
+                margin: 10px;
+            }
+            .sidebar{
+                width: 30vw;
+                background-color: blue;
+                margin-right: 10px;
+            }
+            .content{
+                display: flex;
+                flex-direction: column;
+                
+            }
+            .content1{
+                 height: 39vh;
+                width: 70vw;
+                background-color: brown;
+                margin-bottom: 15px;
+                }
+
+                .content2{
+                 height: 39vh;
+                width: 70vw;
+                
+                display: flex;
+                }
+
+                .content3{
+                 height: 39vh;
+                width: 34vw;
+                background-color: black;
+                margin-right: 15px;
+                
+                }
+                 .content4{
+                 height: 39vh;
+                width: 34vw;
+                background-color: black;
+                
+                }
+
+
+
+
+            footer{
+                height: 10vh;
+            width:100vw;
+            background-color: gray;
+            margin: 10px;
+            }
+    </style>
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="sidebar"></div>
+        <div class="content"> 
+            <div class="content1"></div>
+            <div class="content2">
+
+                <div class="content3"></div>
+                <div class="content4"></div>
+            </div>
+            
+        </div>
+    </main>
+    <footer></footer>
+
+</body>
+</html>
