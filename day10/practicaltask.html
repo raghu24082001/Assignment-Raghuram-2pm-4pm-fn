@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            display: inline-block;
+        }
+        .linear{
+            height: 200px;
+            width: 100vw;
+            background: linear-gradient(to right,blue,rgb(70, 192, 22));
+        }
+        .text{
+            font-family: sans-serif;
+            font-size: 20px;
+            line-height: 1.8;
+            letter-spacing: 5px;
+
+        }
+        .shadow{
+            text-shadow: 5px 5px 5px gray;
+        }
+        .fixed-box {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      background: black;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    </style>
+</head>
+<body>
+    <h2>Make 4 boxes each using a different color format.</h2>
+    <div class="box1" style="background-color: blue;"></div>
+    <div class="box1" style="background-color: rgb(33, 55, 22);"></div>
+    <div class="box1" style="background-color: #223344;"></div>
+    <div class="box1" style="background-color: hsl(200, 70%, 40%);"></div>
+    <br>
+    <h2>Linear gradient</h2>
+    <div class="linear"></div>
+    <br>
+    <h2>Style a paragraph with custom fonts and spacing</h2>
+    <div class="text">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur illo eos, itaque, accusantium doloribus numquam modi exercitationem quos eveniet necessitatibus nostrum suscipit dolorem accusamus, ex delectus iure iste. Modi asperiores, ex quae at eos eius qui voluptatibus animi aperiam nisi facilis ea sint non itaque voluptates omnis quis illum pariatur maxime, possimus, perferendis adipisci rem nemo. Unde dolorum harum quisquam nobis ab tempore repellendus expedita! Molestiae quia possimus debitis, accusantium dolor itaque eos repudiandae suscipit mollitia enim perspiciatis magnam quaerat ex! Exercitationem adipisci inventore doloremque beatae distinctio sunt ipsa incidunt, rerum id officiis cum minus odio recusandae ut amet?
+    </div>
+    <h2 class="shadow">Hi There,I am raghuram</h2>
+    <br>
+    <h2>Position Fixed</h2>
+      <div class="fixed-box">
+    Fixed to bottom-right!
+  </div>
+
+</body>
+</html>
