@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Practice Tasks</title>
+  <style>
+    /* Task 1: Block+Inline */
+    .block {
+      display: block;
+      background: lightblue;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+    .inline {
+      display: inline;
+      background: yellow;
+    }
+
+    /* Task 2: Float Image */
+    .float-img {
+      float: left;
+      margin-right: 10px;                                                                                                                                                                                                                                           
+      height: 120px;
+      width: 120px;
+    }
+
+    /* Task 3: Flex Container */
+    .flex-container {
+      display: flex;
+      justify-content: space-evenly;
+      background: #f0f0f0;
+      padding: 20px;
+      margin-top: 20px;
+    }
+    .box {
+      padding: 10px;
+      background: lightgreen;
+    }
+
+    /* Task 4: align-self */
+    .flex-align-container {
+      display: flex;
+      height: 200px;
+      background: lightgray;
+    }
+    .align-item {
+      padding: 10px;
+      background: coral;
+    }
+    .special {
+      align-self: flex-end; 
+    }
+
+    /* Task 5: Grid */
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .grid-item {
+      background: lightpink;
+      padding: 10px;
+    }
+
+    /* Clear float */
+    .clear {
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Task 1 -->
+  <h2>1. Block Element & Inline Element</h2>
+  <div class="block">I am a full-width block element</div>
+  <p>This is text with an <span class="inline">inline element</span> inside it.</p>
+
+  <!-- Task 2 -->
+  <h2>2. Float Image with Wrapped Text</h2>
+  <img src="./3eb1af8c92fc4e186b886e5402911ae7.jpg" class="float-img" alt="Example image">
+  <p>
+    This text wraps around the floating image. Keep writing content here to see
+    how it flows around the image positioned on the left.
+  </p>
+  <div class="clear"></div>
+
+  <!-- Task 3 -->
+  <h2>3. Flexbox - Evenly Spaced Items</h2>
+  <div class="flex-container">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+  </div>
+
+  <!-- Task 4 -->
+  <h2>4. Flex Item with align-self</h2>
+  <div class="flex-align-container">
+    <div class="align-item">Item 1</div>
+    <div class="align-item special">Item 2 (aligned differently)</div>
+    <div class="align-item">Item 3</div>
+  </div>
+
+  <!-- Task 5 -->
+  <h2>5. 2-Column Grid (1fr 2fr)</h2>
+  <div class="grid">
+    <div class="grid-item">Column 1 (1fr)</div>
+    <div class="grid-item">Column 2 (2fr)</div>
+  </div>
+
+</body>
+</html>

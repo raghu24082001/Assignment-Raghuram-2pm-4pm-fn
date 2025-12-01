@@ -4,49 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<style>
-       .container{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 10vh 80vh 10vh;
-        grid-template-areas: 'h h h h h' 
-                               's1 m m m s2'
-                               'f f f f f';
-                               gap: 10px;
-       }
-       header{
-        background-color: blue;
-        grid-area: h;
-        text-align: center;
-       }
-       .sb1{
-        background-color: palegreen;
-        grid-area:s1;
-       }
-       .sb2{
-        background-color: blueviolet;
-        grid-area: s2;
-       }
-       .main{
-        background-color: gold;
-        grid-area: m;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-       }
-       footer{
-        background-color: seagreen;
-        grid-area: f;
-       }
-</style>
+    <style>
+        .box{
+            background-color: red;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            animation-name: circle;
+            animation-duration: 3s ;
+            position: absolute;
+            /* animation-fill-mode: forwards; */
+            animation-iteration-count: infinite;
+            
+            
+        }
+        @keyframes circle {
+            0%{
+                top:0px;
+                left: 0px;
+            }
+            50%{
+                background-color: blue;
+                width: 100px;
+                height: 100px;
+                top: 100px;
+                left: 100px;
+            }
+            100%{
+                width: 200px;
+                height: 200px;
+                top: 500px;
+                left: 500px;
+}
+            
+        }
+
+    </style>
 </head>
 <body>
-    <div class="container">
-    <header><h1>hello</h1></header>
-    <div class="sb1"></div>
-    <div class="main"><h1>main</h1></div>
-    <div class="sb2"></div>
-    <footer></footer>
-    </div>
+    <div class="box"></div>
 </body>
 </html>
