@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+             .nav{
+                background-color: cadetblue;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 60px;
+                gap: 20px;
+        
+             }
+             a{
+                color: whitesmoke;
+               
+             }
+            
+             .card{
+                flex:1;
+                text-align: center;
+                background-color: blueviolet;
+                padding: 20px;
+
+             }
+
+             .card-row{
+                display: flex;
+                gap: 20px;
+             }
+
+             .toolbar{
+                background-color: sandybrown;
+                height: 30px;
+               display: flex;
+                align-items: center;
+                justify-content: space-between;
+             }
+
+             .container {
+  height:500x;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  align-items: center;      
+  gap: 15px;
+}
+
+.box {
+  padding: 20px;
+  background: red;
+  text-align: center;
+}
+.block1{
+    display: flex;
+    background-color: red;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    padding: 10px;
+}
+.block2{
+    min-width: 0px;
+}
+
+    </style>
+</head>
+<body>
+    <h2>Create a horizontal navigation where items are centered horizontally and vertically inside a 60px bar.</h2>
+    <nav class="nav">
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+   </nav>
+<br>
+<h2>Make a 3-item card row where items have equal width and 20px gap.</h2>
+
+   <div class="card-row">
+    <div class="card">card 1</div>
+    <div class="card"> card 2</div>
+    <div class="card"> card 3</div>
+</div>
+<br>
+<h2>Build a toolbar where one button is left, one is centered, and one is right using flex.</h2>
+<div class="toolbar">
+     <button>button</button>
+      <button>button</button>
+       <button>button</button>
+</div>
+<br>
+<h2>Stack three blocks vertically and center them in the viewport using flex.</h2>
+  <div class="container">
+  <div class="box">1</div>
+  <div class="box">2</div>
+  <div class="box">3</div>
+</div>
+<br>
+<h2>Fix an overflowing text block inside a flex item by applying the correct min-width setting.</h2>
+<div class="block1">
+    <div class="block2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, qui? Porro praesentium, cum iste possimus debitis accusantium esse impedit voluptatum voluptatibus dolores vitae quas facilis fugit? Tenetur deleniti deserunt pariatur ratione, voluptatem dicta nulla sapiente, vel qui optio quae perferendis exercitationem facilis cupiditate. Commodi perspiciatis deserunt doloremque porro dolores ratione laboriosam vitae corporis earum! Quis esse tempore quaerat optio corrupti laboriosam fugiat veniam distinctio. Commodi quas nobis incidunt numquam voluptates suscipit itaque, natus nesciunt recusandae tempora a molestias ipsa excepturi voluptatum possimus tenetur optio? Nihil eos libero quibusdam ea expedita accusamus totam esse ipsam labore sed. Illum quis voluptatum repellat.</div>
+
+</div>
+
+</body>
+</html>
