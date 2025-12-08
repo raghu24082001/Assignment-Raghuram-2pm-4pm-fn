@@ -4,68 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practical Tasks</title>
-    
-    
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
-    
-    <style> 
 
-body {
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
             width: 100%;
         }
 
-.navbar{
-    background-color: black;
-    padding: 20px;
-    position: sticky;
-    top: 0px;
+        .navbar {
+            background-color: black;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+        }
 
-}
-a{
-    color: white;
-    text-decoration: none;
-    margin-left: 10px;
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 600;
+        }
 
-}
-.profilecard{
-     width: 300px;
-     padding: 10px;
-     border-radius: 20px;
-     text-align: center;
-    background: linear-gradient(to right,black,red);
-    margin: 30px auto;
-    color: whitesmoke;
-    
-}
+        .profilecard {
+            width: 300px;
+            padding: 20px;
+            border-radius: 20px;
+            text-align: center;
+            background: linear-gradient(to right, black, red);
+            margin: 30px auto;
+            color: whitesmoke;
+        }
 
-.profilecard img{
-    border-radius: 50%;
-    height: 100px;
-    width: 100px;
-}
-.banner{
-    background: url(./wp7660620.jpg) center;
-    height: 300px;
-    width: 100vw;
-    display: flex;
+        .profilecard img {
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+        }
+
+        .banner {
+            background: url(./wp7660620.jpg) center/cover no-repeat;
+            height: 300px;
+            display: flex;
             justify-content: center;
             align-items: center;
-            color:crimson;
-            font-size: 50px;
+        }
 
-}
-.hero {
+        /* Gradient text for banner heading */
+        .banner h1 {
+            font-size: 50px;
+            background: linear-gradient(to right, red, black);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero {
             padding: 100px 20px;
             text-align: center;
         }
+
         .hero h1 {
             font-size: 3rem;
             text-transform: uppercase;
             letter-spacing: 3px;
-            text-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
         }
+
         .icon-box {
             position: relative;
             display: inline-block;
@@ -83,34 +89,36 @@ a{
             border-radius: 50%;
         }
     </style>
-  </head>      
-  <body>
-     <div class="navbar">
+</head>
+
+<body>
+    <div class="navbar">
         <a href="">Home</a>
-        <a href="">Profie</a>
+        <a href="">Profile</a>
         <a href="">Contact</a>
-     </div>
-  <div class="profilecard">
-    <img src="./3eb1af8c92fc4e186b886e5402911ae7.jpg" alt="">
-    <h2>Uchiha Obito</h2>
-    <p>Ninja</p>
+    </div>
 
-  </div> 
- <div class="banner">
-  <h1 class="bannerhead">Uchiha  Clan</h1>
- </div>
+    <div class="profilecard">
+        <img src="./3eb1af8c92fc4e186b886e5402911ae7.jpg" alt="">
+        <h2>Uchiha Obito</h2>
+        <p>Ninja</p>
+    </div>
 
-  <div class="hero">
+    <div class="banner">
+        <h1>Uchiha Clan</h1>
+    </div>
+
+    <div class="hero">
         <h1>Creative Designs</h1>
         <p>Building modern UI with HTML and CSS</p>
     </div>
+
     <div class="icon-box">
         <img src="https://picsum.photos/80" alt="Icon" style="border-radius: 10px;">
         <div class="badge">5</div>
     </div>
 
-    <p style="height: 1000px;"></p> 
-  
-  </body>      
+    <p style="height: 1000px;"></p>
 
+</body>
 </html>

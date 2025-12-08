@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Task-1 and Task - 2 */
+        .con{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .box{
+            background-color: blue;
+            height: 300px;
+        }
+        /* Task-3 and Task-4 */
+        .son{
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 100px 100px 100px;
+        }
+        .sox{
+            background-color: brown;
+            grid-column: span 2;
+        }
+        .xox{
+            background-color: black;
+            
+        }
+        /* Task-5 */
+        .man{
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(4,1fr);
+        }
+        .max{
+            background-color: blue;
+            height: 500px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="box"></div>
+        <div class="box"></div>
+   </div>
+   <br>
+   <div class="son">
+        <div class="sox"></div>
+        <div class="xox"></div>
+        <div class="xox"></div>
+   </div>
+   <br>
+   <div class="man">
+         <div class="max"></div>
+         <div class="max"></div>
+         <div class="max"></div>
+         <div class="max"></div>
+   </div>
+
+</body>
+</html>

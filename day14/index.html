@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            box-sizing: border-box;
+            margin: 0px;
+            
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .services-section{
+            text-align: center;
+            height: 100vh;
+            
+        }
+        .services-grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+        }
+        .service-card{
+            border-radius: 8px;
+            border: 1px solid rgb(216, 195, 195);
+            height: 200px;
+            margin: 10px;
+            padding: 10px;
+            transition-duration: .5s;
+            cursor: pointer;
+           
+        }
+        .service-card .icon{
+            font-size: 40px;
+            
+        }
+        .service-card h3{
+            margin-top: 10px;
+        }
+        .service-card:hover{
+            transform: translateY(-10px);
+            box-shadow: 0px 10px 18px rgb(180, 149, 149);
+
+        }
+        .head{
+          width: 600px;
+          background-color: skyblue;
+          font-size: 50px;
+          padding: 20px;
+          color: azure;
+          opacity: 0;
+          animation-name: raghu;
+          animation-duration: 2s;
+          animation-iteration-count: infinite;
+          transition: linear;
+          text-shadow: 5px 5px 10px rgb(159, 128, 128);
+        }
+        @keyframes raghu {
+          10%{
+             opacity: 0.4;
+          }
+          50%{
+            opacity: 0.8;
+          }
+          100%{
+           opacity: 30;
+           transform: translateY(-10px);
+           box-shadow: 0px 10px 10px rgb(162, 135, 135);
+          }
+        }
+
+    </style>
+</head>
+<body>
+      <section class="services-section">
+    <h1>Our Services</h1>
+    <p>We provide high-quality services to help grow your business.</p>
+
+    <div class="services-grid">
+      
+      <div class="service-card">
+        <div class="icon">💼</div>
+        <h3>Business Consulting</h3>
+        <p>We offer expert guidance to help you plan, launch, and expand your business.</p>
+      </div>
+
+      
+      <div class="service-card">
+        <div class="icon">🎨</div>
+        <h3>Design & Branding</h3>
+        <p>Create a memorable brand identity with custom logos, colors, and visuals.</p>
+      </div>
+
+     
+      <div class="service-card">
+        <div class="icon">💻</div>
+        <h3>Web Development</h3>
+        <p>Modern, responsive websites built with clean code and fast performance.</p>
+      </div>
+
+      
+      <div class="service-card">
+        <div class="icon">📈</div>
+        <h3>Marketing Strategy</h3>
+        <p>Grow your audience through targeted campaigns and performance analytics.</p>
+      </div>
+    </div>
+    <div class="don" style="display: flex; align-items: center; justify-content: center;">
+    <h1 class="head">Thank You</h1>
+    </div>
+  </section>
+
+
+        
+</body>
+</html>

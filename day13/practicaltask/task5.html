@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services Section</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      padding: 40px;
+    }
+
+    .services-section {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .services-grid {
+      display: grid;
+      gap: 25px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      margin-top: 30px;
+    }
+
+    .service-card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+    }
+
+    .service-card h3 {
+      margin-bottom: 10px;
+      font-size: 20px;
+      color: #333;
+    }
+
+    .service-card p {
+      color: #555;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .icon {
+      font-size: 40px;
+      margin-bottom: 15px;
+      color: #4A90E2;
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="services-section">
+    <h1>Our Services</h1>
+    <p>We provide high-quality services to help grow your business.</p>
+
+    <div class="services-grid">
+      
+      <div class="service-card">
+        <div class="icon">💼</div>
+        <h3>Business Consulting</h3>
+        <p>We offer expert guidance to help you plan, launch, and expand your business.</p>
+      </div>
+
+      
+      <div class="service-card">
+        <div class="icon">🎨</div>
+        <h3>Design & Branding</h3>
+        <p>Create a memorable brand identity with custom logos, colors, and visuals.</p>
+      </div>
+
+     
+      <div class="service-card">
+        <div class="icon">💻</div>
+        <h3>Web Development</h3>
+        <p>Modern, responsive websites built with clean code and fast performance.</p>
+      </div>
+
+      
+      <div class="service-card">
+        <div class="icon">📈</div>
+        <h3>Marketing Strategy</h3>
+        <p>Grow your audience through targeted campaigns and performance analytics.</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
