@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+          
+        }
+        header h1{
+            background-color: blue;
+            color: white;
+            text-align: center;
+            font-size: 85px;
+        }
+
+        main{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 'side box1 box1 box1 box1'
+                                 'side box2 box2 box2 box2';
+
+   }
+   .sidebar{
+     
+     background-color: aqua;
+     grid-area: side;
+     text-align: center;
+   }
+   .sidebar ul{
+     padding: 0px;
+   }
+   .box1{
+     background-color: beige;
+     grid-area: box1;
+     display: flex;
+     align-items: center;
+     padding: 10px;
+     
+   }
+   .box2{
+    background-color: crimson;
+    grid-area: box2;
+    display: flex;
+     align-items: center;
+     padding: 10px;
+   }
+            
+       .sidebar li{
+        list-style-type: none;
+        padding: 20px;
+       }
+    .box1 img{
+        width: 300px;
+        height: 300px;
+    }  
+    .box1 p{
+        padding-left: 10px;
+    }
+       .box2 img{
+        width: 300px;
+        height: 300px;
+    }    
+    .box2 p{
+        padding-left: 10px;
+    }
+
+    @media (max-width:500px) {
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+            
+            gap: 10px;
+            
+
+   }
+        header{
+            height: 50px;
+            width: 500px;
+            background-color: blue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+
+        }
+        header h1{
+           font-size: 16px;
+           color: white;
+        }
+        
+        .sidebar ul{
+             display: flex;
+             align-items: center;
+             justify-content: space-around;
+
+        }
+        
+        .box1{
+     background-color: beige;
+     grid-area: box1;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 10px;
+     
+   }
+   .box2{
+    background-color: crimson;
+    grid-area: box2;
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+     padding: 10px;
+   }
+        .box1 img{
+            width: 400px;
+            height: 400px;
+        }
+        .box1 p{
+            margin: 10px;
+        }
+        .box2 img{
+             width: 400px;
+            height: 400px;
+        }
+        .box2 p{
+            margin: 10px;
+        }
+        
+        
+    } 
+
+  
+    </style>
+</head>
+<body>
+    <header><h1>Welcome to SLA</h1></header>
+    <main>
+        <div class="sidebar">
+            <ul>
+                <li>Home</li>
+                <li>Home</li>
+                <li>Home</li>
+                <li>Home</li>
+                <li>Home</li>
+                <li>Home</li>
+            </ul>
+        </div>
+        <div class="box1">
+            <img src="./3eb1af8c92fc4e186b886e5402911ae7.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis laborum facilis alias totam perferendis aperiam, quis officiis tempora similique itaque eius atque minima id reiciendis a commodi aliquid ut porro veniam omnis voluptatem debitis? Suscipit aperiam error voluptatem dolor praesentium nobis quod nulla. Mollitia neque repellat repellendus veniam placeat id vero consequatur ad praesentium nam accusamus perspiciatis culpa provident, facere sunt ullam pariatur debitis? Ipsam soluta sit ducimus debitis, dolorem eaque sint eius dolor nobis officiis a. Incidunt reiciendis, sed unde molestiae magni enim corrupti mollitia voluptates perferendis, itaque dolorem, cupiditate accusantium! Omnis ullam autem esse velit, animi fuga dignissimos!</p>
+        </div>
+        <div class="box2">
+            <img src="./3eb1af8c92fc4e186b886e5402911ae7.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis laborum facilis alias totam perferendis aperiam, quis officiis tempora similique itaque eius atque minima id reiciendis a commodi aliquid ut porro veniam omnis voluptatem debitis? Suscipit aperiam error voluptatem dolor praesentium nobis quod nulla. Mollitia neque repellat repellendus veniam placeat id vero consequatur ad praesentium nam accusamus perspiciatis culpa provident, facere sunt ullam pariatur debitis? Ipsam soluta sit ducimus debitis, dolorem eaque sint eius dolor nobis officiis a. Incidunt reiciendis, sed unde molestiae magni enim corrupti mollitia voluptates perferendis, itaque dolorem, cupiditate accusantium! Omnis ullam autem esse velit, animi fuga dignissimos!</p>
+
+        </div>
+        </main>
+      
+</body>
+</html>
