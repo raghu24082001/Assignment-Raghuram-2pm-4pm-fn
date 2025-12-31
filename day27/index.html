@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Name</label> <input type="text" id="name" name="name">
+    <Button onclick="store()">Submit</Button>
+    <button onclick="show()">Show</button>
+    <p id="ans"></p>
+    <script >
+       function store(){
+          const details={
+                 name:document.getElementById('name').value
+          }
+          localStorage.setItem('details',JSON.stringify(details))
+       }
+    function show(){
+        const we = JSON.parse(localStorage.getItem('details'))
+        document.getElementById('ans').innerText= we.name
+    }
+
+    </script>
+</body>
+</html>

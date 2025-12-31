@@ -1,79 +1,68 @@
-// Create an IIFE that prints "Started"
-// (function(){
-//     console.log('Started')
-// })()
+// //Write an if condition to check if a number is positive
+// let a=6
 
-// Write a callback function for setTimeout
-// setTimeout((function(){
-//     console.log('Hi')
-// }),5000)
-
-// Convert the function to an arrow function
-// const Greet=()=>{
-//     console.log('Hello')
-// }
-
-// // Greet()
-
-// Create a function that takes two numbers and returns their sum
-// function sum(a,b){
-//     return a+b
-// }
-
-// console.log(sum(5,5))
-
-// Write a function that prints "Good Morning"
-// function greet(){
-//     console.log('Good Morning')
-// }
-
-// greet()
-
-// function calculation(Weightinkg,heightinmeter){
-//      let bmi=Weightinkg/(heightinmeter*heightinmeter)
-//      return  bmi
-// }
-
-// let result = calculation(70,1.75)
-
-// console.log(result.toFixed(2))
-
-// function greeting(name){
-//     console.log(`welcome ${name}`)
-// }
-
-// greeting("raghu")
-
-
-
-// function Grade(mark){
-
-
-// if(mark>=80 && mark<=100){
-//     return 'A'
-// }
-// else if(mark>=71 && mark<=79){
-//     return 'B'
-// }
-// else if(mark>=61 && mark<=69){
-//     return 'C'
-// }
-// else if(mark>=51 && mark<=59){
-//     return 'D'
+// if(a>0){
+//     console.log('positive')
 // }
 // else{
-//     return 'F'
+//     console.log('negative')
 // }
+
+// //Use else-if to print grades (A, B, C, Fail
+
+// let mark=9
+
+// if(mark>=90){
+//     console.log('A')
 // }
-// console.log(Grade(80))
+// else if(mark>=60){
+//     console.log('B')
+// }
+// else{
+//     console.log('C')
+// }
 
-let arr=[1,2,3,4,5]
+// //Create a for loop to print 1–10
 
-arr.forEach(arr => {
-    console.log(arr*2)
-});
+// for(i=1;i<=10;i++){
+//     console.log(i)
+// }
 
-let auu= arr.map(num=>{
-    return num*2
-})
-console.log(auu)
+//Use while to print even numbers up to 20
+
+// let i=1;
+
+// while(i<=20){
+//      if(i%2===0){
+//         console.log(i)
+//      }
+    
+//     i++;
+// }
+
+//Use for…in to print object keys & values
+
+// let car = {
+//     name:'audi',
+//     color:'red',
+//     model:2000
+// }
+
+// for(let key in car){
+//     console.log(car[key])
+// }
+
+//Age Checker
+//Input age → output Child/Adult/Senior.
+
+// let a=30;
+
+// if(a>=0 &&  a<=11){
+//     console.log('child')
+// }
+// else if(a>=12 &&  a<=18){
+// console.log('adult')
+// }
+// else{
+//     console.log('senior')
+// }

@@ -1,12 +1,12 @@
 
-function das(){
-   const id= document.getElementById('hi')
-   id.innerHTML='bye'
+// let raghu= new Promise((resolve, reject) => {
+//    setTimeout(() => {
+//       let nn= Math.random()
+//   let ans = nn > 0.5
+//   ans? resolve(nn)
+//   : reject("Operation failed!");
+// }, 1000);
+// })
 
-}
-function day(){
-   const id= document.getElementById('hi')
-   id.innerHTML='supre'
-    id.style.transform='rotatez(360deg)'
+// raghu.then((x)=>{console.log(x)},(x)=>{console.log(x)})
 
-}
