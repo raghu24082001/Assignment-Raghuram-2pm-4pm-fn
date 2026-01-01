@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h1 id="head">Hi there</h1>
+     <button onclick="change()">Change</button>
+     <button onclick="remove()">Remove</button>
+     <button onclick="color()">Changecolor</button>
+
+     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, odit.</p>
+     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, odit.</p>
+     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, odit.</p>
+     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, odit.</p>
+
+     <ul id="list">
+        
+     </ul>
+     <button onclick="red()" id="red">red</button>
+     <button onclick="blue()" id="blue">blue</button>
+
+    <script>
+           function red(){
+               document.getElementById('red').style.backgroundColor='red'
+           }
+           function blue(){
+               document.getElementById('blue').style.backgroundColor='blue'
+           }
+
+        function change(){
+            document.getElementById('head').style.backgroundColor='blue'
+            document.querySelector('p').style.backgroundColor = 'blue'
+           const neww =  document.getElementById('list')
+           const data = document.createElement('li')
+           data.innerHTML= 'Task 1'
+           neww.appendChild(data)
+        }
+        function remove(){
+             const neww =  document.getElementById('list')
+             if(neww){
+                neww.removeChild(neww.lastElementChild)
+             }
+             
+        }
+        function color() {
+            document.body.style.backgroundColor='beige'
+        }
+
+    </script>
+</body>
+</html>
