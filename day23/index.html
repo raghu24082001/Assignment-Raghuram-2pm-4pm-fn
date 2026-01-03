@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input" placeholder="Type here">
+    <button onclick='show()' type="button">Alert</button>
+    <div id="mouse">Lorem ipsum dolor sit amet.</div>
+    <p id="in"></p>
+    <p id="out"></p>
+    <form action="" id="myform" >
+        <input type="text" name="input" id="for" >
+        <button id="but">Button</button>
+        <p id="inputerror"></p>      
+    </form>
+    <button id="color">Color</button>
+     
+    <div id="parent">
+  <button id="child">Click</button>
+</div>
+    <script>
+        function show(){
+            alert('Button is pressed')
+        }
+    const change = document.getElementById('mouse')
+    change.addEventListener('mouseover',()=>{
+        change.style.background='red'
+       
+    })
+    change.addEventListener('mouseout',()=>{
+        change.style.background='none'
+       
+    })
+
+    document.getElementById("input").addEventListener("keydown", function (e) {
+  console.log("Key pressed:", e.key);
+  const out= document.getElementById('out').innerHTML=e.key
+  const inn = document.getElementById('in').innerHTML=e.keyCode
+
+});
+
+document.getElementById('myform').addEventListener('submit',(e)=>{
+    e.preventDefault()
+    const input= document.getElementById('for').value
+    const inputerror=document.getElementById('inputerror')
+    inputerror.innerHTML=''
+    if(input===''){
+       inputerror.innerHTML='input is empty'
+    }
+    
+})
+
+document.getElementById('color').addEventListener('click',()=>{
+     color.style.background='red'
+})
+
+document.getElementById('color').addEventListener('dblclick',()=>{
+     color.style.background='none'
+})
+
+document.getElementById("parent").addEventListener("click", () => {
+  
+  alert("Parent Clicked");
+});
+
+document.getElementById("child").addEventListener("click", () => {
+      event.stopPropagation()
+  alert("Child Clicked");
+});
+    </script>
+</body>
+</html>
