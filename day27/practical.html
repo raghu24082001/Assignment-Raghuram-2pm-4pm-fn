@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="thirukural()" >fetch</button>
+    <button onclick="Show()">Show Ans</button>
+    <p id="ans"></p>
+    <script>
+        async function thirukural() {
+    try{
+         const kural = await fetch('https://thirukkural.senkanthal.org/kural/1')
+         const Ans = await kural.json()
+         localStorage.setItem('ans',JSON.stringify(Ans))
+    }
+    catch(err){
+        console.log(err)
+    }
+}
+function Show(){
+    const value = JSON.parse(localStorage.getItem('ans'))
+    document.getElementById('ans').innerHTML= value.kural
+}
+
+
+    </script>
+</body>
+</html>
