@@ -41,15 +41,17 @@ const App = () => {
     }}>
       <button onClick={()=>setTheme(!theme)}>{theme ? 'dark' : 'light'}</button><br />
 
-      <p >Hello There</p>
+      <p>Hello There</p>
 
-       <button onClick={sub}>-</button>
+      <button onClick={sub}>-</button>
 
       <p>{count}</p>
-      <button onClick={add}>+</button><br />
+      <button onClick={add}>+</button><br /><br />
       <button onClick={reset}>Reset</button>
-     <p >{text}</p> 
+      <p>{text}</p> 
      <button onClick={change} onDoubleClick={changeagain}>Toggle</button>
+     <br />
+     <br />
      <form action="">
       <input type="text"
         onChange={handlechange}
